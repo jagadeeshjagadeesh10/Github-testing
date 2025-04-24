@@ -9,8 +9,9 @@ on:
       - main
 
 jobs:
-  docker-build:
-    runs-on: GT-runner
+  docker-build: 
+    runs-on: [self-hosted, GT-runner]
+
 
     steps:
     - name: Checkout Code
